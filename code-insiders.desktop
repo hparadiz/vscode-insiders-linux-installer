@@ -1,0 +1,24 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Visual Studio Code - Insiders
+Version=1.1
+GenericName=IDE
+Icon=code-insiders
+Exec=/usr/bin/code-insiders %F
+Terminal=false
+StartupWMClass=Code - Insiders
+Keywords=code;ide;visual studio;vscode;vs;visual;studio;insiders
+Categories=Development;IDE;WebDevelopment;TextEditor;
+MimeType=text/plain;text/*;text/css;text/html;text/javascript;text/csv;text/ecmascript;text/markdown;text/sgml;text/xml;text/x-csharp;text/json;application/json;application/xml;application;application/node;application/xml-dtd;application/xml-external-parsed-entity;application/xml-patch+xml;application/sql;application/soap+xml;application/jwt;application/jwk+json;application/jwk-set+json;application/javascript;application/json-seq;application/typescript
+#https://code.visualstudio.com/docs/editor/command-line#_opening-files-and-folders
+Actions=Diff;Open-Reuse-Window;
+
+[Desktop Action Diff]
+Exec=/usr/bin/code-insiders --diff %F
+Name=Diff Two Files
+
+[Desktop Action Open-Reuse-Window]
+Exec=/usr/bin/code-insiders --reuse-window %F
+Name=Open in Existing Window
+
